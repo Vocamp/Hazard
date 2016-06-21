@@ -1,6 +1,6 @@
 # HazardousSituation
 Description: Original [WOP2015 submission](http://ceur-ws.org/Vol-1461/WOP2015_pattern_abstract_7.pdf) "The Hazardous Situation Ontology Design Pattern" by
-Agnieszka Lawrynowicz and Ilona Lawniczak.
+Agnieszka Lawrynowicz and Ilona Lawniczak. Pattern documentation can be found at [ontologydesignpatterns.org](http://ontologydesignpatterns.org/wiki/Submissions:HazardousSituation)
 
 ![image](../concept-map/Hazardous-situation.png)
 
