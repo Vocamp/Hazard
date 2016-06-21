@@ -1,6 +1,6 @@
 # Hazard Ontology Design Pattern
 Description:
-ODP extension of *HazardousSituation* that models *Hazard* as a cause-effect relationship between a *Hazard* and a *Object* which is exposed to a *Hazard*.
+ODP extension of *HazardousSituation* that models *Hazard* as a cause-effect relationship between a *Hazard* and an *Object* which is exposed to a *Hazard*.
 ## Competency Questions
 
 ### Competency Questions for Natural Hazard related ODPs
@@ -30,6 +30,7 @@ ODP extension of *HazardousSituation* that models *Hazard* as a cause-effect rel
 [//]: # (CausalPotential \sqsubseteq \top)
 [//]: # (DistributionMechanism \sqsubseteq \top)
 [//]: # (Effect \sqsubseteq \top)
+
 [Original Axioms](http://mathurl.com/h8h3swq)
 ![equation](http://mathurl.com/h8h3swq.png)
 
