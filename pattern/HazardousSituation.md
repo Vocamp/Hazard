@@ -12,5 +12,16 @@ The list of competency questions for the pattern is as follows:
 - What is the value of exposure of an object being exposed to a hazard?
 
 ## Axioms
+[//]: # (\mathrm{HazardousSituation} &\sqsubseteq \exists \mathrm{participantIn}.\mathrm{HazardousEvent})
+[//]: # (\mathrm{HazardousEvent} &\equiv \exists \mathrm{hasParticipant}.(\mathrm{Object}\sqcap \exists)
+[//]: # (\mathrm{exposedTo.Hazard})
+[//]: # (\mathrm{HazardousEvent} &\sqsubseteq \exists \mathrm{hasQuality.Exposure})
+[//]: # (\mathrm{HazardousEvent} &\sqsubseteq \exists \mathrm{hasDuration.TimeInterval})
+[//]: # (\mathrm{HazardousEvent} &\sqsubseteq \exists \mathrm{causallyFollows.Cause})
+[//]: # (\mathrm{Consequence} &\sqsubseteq \exists \mathrm{causallyFollows.HazardousEvent})
+[//]: # (\mathrm{Cause} &\sqsubseteq \mathrm{Event})
+[//]: # (\mathrm{HazardousEvent} &\sqsubseteq \mathrm{Event})
+[//]: # (\mathrm{Consequence} &\sqsubseteq \mathrm{Event}))
+
 [Original Axioms](http://mathurl.com/h39tbeg)
 ![equation](http://mathurl.com/h39tbeg.png)
