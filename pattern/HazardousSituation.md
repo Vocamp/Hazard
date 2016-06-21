@@ -2,6 +2,8 @@
 Description: Original [WOP2015 submission](http://ceur-ws.org/Vol-1461/WOP2015_pattern_abstract_7.pdf) "The Hazardous Situation Ontology Design Pattern" by
 Agnieszka Lawrynowicz and Ilona Lawniczak.
 
+![image](../concept-map/Hazardous-situation.png)
+
 ## Competency Questions
 The list of competency questions for the pattern is as follows:
 - What object (person, organization, equipment etc.) is exposed to a hazard?
