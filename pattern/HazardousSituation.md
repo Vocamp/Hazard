@@ -85,3 +85,4 @@ The list of competency questions for the pattern is as follows:
 [//]: # (\exists \mathrm{isCausedBy}.\top &\sqsubseteq \mathrm{Consequence}\\)
 [//]: # (\mathrm{isCausedBy} &\equiv \mathrm{causes}^- \\)
 ![image](http://mathurl.com/zptejtt.png)
+![image](http://mathurl.com/jhy7mwy.png)
