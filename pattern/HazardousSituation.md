@@ -28,6 +28,8 @@ The list of competency questions for the pattern is as follows:
 
 ![equation](http://mathurl.com/jml4unc.png)
 
+The role causallyFollows was changed to isCausedBy.
+![equation](http://mathurl.com/jfusohu.png)
 ### New Axioms:
 ### [Syntactic Sugar](http://mathurl.com/gqupdc9)
 [//]: # (\mathrm{Agent} \sqsubseteq \top)
