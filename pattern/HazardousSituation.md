@@ -29,6 +29,7 @@ The list of competency questions for the pattern is as follows:
 ![equation](http://mathurl.com/jml4unc.png)
 
 The role causallyFollows was changed to isCausedBy.
+
 ![equation](http://mathurl.com/jfusohu.png)
 ### New Axioms:
 ### [Syntactic Sugar](http://mathurl.com/gqupdc9)
@@ -87,4 +88,5 @@ The role causallyFollows was changed to isCausedBy.
 [//]: # (\exists \mathrm{isCausedBy}.\top &\sqsubseteq \mathrm{Consequence}\\)
 [//]: # (\mathrm{isCausedBy} &\equiv \mathrm{causes}^- \\)
 ![image](http://mathurl.com/zptejtt.png)
+
 ![image](http://mathurl.com/jhy7mwy.png)
