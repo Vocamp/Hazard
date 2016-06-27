@@ -22,6 +22,22 @@ ODP extension of *HazardousSituation* that models *Hazard* as a cause-effect rel
 - What level of exposure to a particular hazard will cause a particular injury?
 - How long was a particular person exposed to a particular hazard?
 
+## Definitions
+> Hazard: (Wordnet) a source of danger; a possibility of incurring loss or misfortune
+
+
+> Natural Hazard ([Red Cross](http://www.ifrc.org/en/what-we-do/disaster-management/about-disasters/definition-of-hazard/))  are naturally occurring physical phenomena caused either by rapid or slow onset events which can be geophysical (earthquakes, landslides, tsunamis and volcanic activity), hydrological (avalanches and floods), climatological (extreme temperatures, drought and wildfires), meteorological (cyclones and storms/wave surges) or biological (disease epidemics and insect/animal plagues).
+
+
+> Technological or man-made hazards: ([Red Cross](http://www.ifrc.org/en/what-we-do/disaster-management/about-disasters/definition-of-hazard/)) (complex emergencies/conflicts, famine, displaced populations, industrial accidents and transport accidents) are events that are caused by humans and occur in or close to human settlements. This can include environmental degradation, pollution and accidents.Technological or man-made hazards (complex emergencies/conflicts, famine, displaced populations, industrial accidents and transport accidents)
+
+>Exposure: is a measure of the extent (a dose) to which an Object is exposed to – or may be influenced by – the Hazard.
+
+
+
+
+
+
 ## Axioms
 
 ### Syntactic Sugar
