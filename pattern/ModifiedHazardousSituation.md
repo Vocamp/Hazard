@@ -48,8 +48,8 @@ ODP extension of *HazardousSituation* that models *Hazard* as a cause-effect rel
 [//]: # (DistributionMechanism \sqsubseteq \top)
 [//]: # (Effect \sqsubseteq \top)
 
-[Original Axioms](http://mathurl.com/h8h3swq)
-![equation](http://mathurl.com/h8h3swq.png)
+[Axioms](http://mathurl.com/gld97op)
+![equation](http://mathurl.com/gld97op.png)
 
 Note: We still need roles between (Object, Effect, DistributionMechanism, Hazard) and Susceptibility.
 ### Surface Semantics
