@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2015/6/untitled-ontology-181#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/6/untitled-ontology-181"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent">
+        <cpannotationschema:hasIntent>To model hazardous situations and their associated hazardous events with events&apos; participating objects and the hazards the objects are exposed to with the exposure value.</cpannotationschema:hasIntent>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+        <owl:versionInfo>v0.1</owl:versionInfo>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#causallyFollows -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#causallyFollows"/>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#employsMitigation -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#employsMitigation">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#exceeds -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#exceeds">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#exposedTo -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#exposedTo">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasAmount -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasAmount">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasDuration"/>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasParticipant">
+        <owl:inverseOf rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#participantIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasSusceptibility -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasSusceptibility">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#involves -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#involves"/>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatedBy">
+        <owl:inverseOf rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatesFrom -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatesFrom">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatesTo">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#EffectiveExposure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#participantIn -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#participantIn">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#toExposure -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#toExposure">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#toHazard -->
+
+    <owl:ObjectProperty rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#toHazard">
+        <rdfs:domain rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+        <rdfs:range rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatedBy"/>
+            <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#mitigatesFrom"/>
+            <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#toHazard"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#causallyFollows"/>
+                <owl:someValuesFrom rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#EffectiveExposure -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#EffectiveExposure">
+        <rdfs:subClassOf rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousEvent"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousEvent"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousEvent -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousEvent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#hasParticipant"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#exposedTo"/>
+                                <owl:someValuesFrom rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#causallyFollows"/>
+                <owl:someValuesFrom rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#participantIn"/>
+                <owl:someValuesFrom rdf:resource="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+    
+
+
+    <!-- http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility -->
+
+    <owl:Class rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Susceptibility">
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Amount"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Cause"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Consequence"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Event"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Exposure"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Hazard"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#HazardousSituation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Mitigation"/>
+                    <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/ontologies/oshdo/HazardousSituation#Object"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
